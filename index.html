@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/splide.min.css">
+
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/media.css">
+
+  <title>Trail And River With Responsive</title>
+</head>
+
+<body>
+  <!-- top bar  -->
+  <section class="container-fluid d-flex justify-content-center gap-3 py-1 top-bar">
+    <p class="mb-0">End of Season Garage Sale 40% off now-August 3rd | Select Styles</p>
+    <a href="#" class="text-capitalize">Shop now &raquo;</a>
+  </section>
+  <!-- top header  -->
+  <section class="container top-header py-2">
+    <div class="row align-items-center">
+      <div class="col-md-12 col-lg-4 mb-md-2 mb-sm-3">
+        <img src="./images/template images/TrailandRiver.png" alt="">
+      </div>
+      <div class="col-md-12 col-lg-8 gap-2">
+        <ul class="d-flex justify-content-end gap-4">
+          <li><a href="#" type="button" data-bs-toggle="modal" data-bs-target="#searchModal">
+              <i class="fa-solid fa-magnifying-glass"></i>What are you looking for?</a>
+
+            <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Search your favourite product</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="Search Here"
+                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                      <span class="input-group-text" id="basic-addon2">Search</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </li>
+          <li><a href="#" type="button" data-bs-toggle="modal" data-bs-target="#giftModal">
+              <i class="fa-solid fa-gift"></i>Gift Certificates</a>
+            <div class="modal fade" id="giftModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Choose A Gift</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+
+                  <div class="modal-body">
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                      <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Dropdown</button>
+                      <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Kits</a></li>
+                        <li><a class="dropdown-item" href="#">Bag</a></li>
+                        <li><a class="dropdown-item" href="#">Boat</a></li>
+
+
+                      </ul>
+                    </div>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="tel:01-987-9876"><i class="fa-solid fa-phone"></i>01-987-9876</a></li>
+          <li>
+            <div class="dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a href="#"><i class="fa-solid fa-user"></i>My Account</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+  <!-- nav bar  -->
+  <header>
+    <section>
+      <nav class="navbar navbar-expand-lg border-top border-bottom main-nav py-0">
+        <div class="container">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item px-5">
+                <a class="nav-link text-capitalize" aria-current="page" href="#">new products</a>
+              </li>
+              <li class="nav-item px-5">
+                <a class="nav-link text-capitalize" href="#">activities</a>
+              </li>
+
+              <li class="nav-item px-5 dropdown">
+                <a class="nav-link dropdown-toggle text-capitalize" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  women
+                </a>
+                <ul class="main-nav-dropdown dropdown-menu w-100 my-4">
+                  <li><a class="dropdown-item text-capitalize" href="#">hoddies</a></li>
+                  <li><a class="dropdown-item text-capitalize" href="#">shirts & pullovers</a></li>
+                  <li><a class="dropdown-item text-capitalize" href="#">tanks</a></li>
+                  <li><a class="dropdown-item text-capitalize" href="#">tea shirts</a></li>
+                  <li><a class="dropdown-item text-capitalize" href="#">sweaters</a></li>
+                  <li><a class="dropdown-item text-capitalize" href="#">jackets & outwear</a></li>
+                  <li><a class="dropdown-item text-capitalize" href="#">pants</a></li>
+                  <li><a class="dropdown-item text-capitalize" href="#">shorts</a></li>
+                  <li><a class="dropdown-item text-capitalize" href="#">dresses & skirts</a></li>
+                </ul>
+              </li>
+              <li class="nav-item px-5">
+                <a class="nav-link text-capitalize" href="#">men</a>
+              </li>
+              <li class="nav-item px-5">
+                <a class="nav-link text-capitalize" href="#">accesssories</a>
+              </li>
+              <li class="nav-item px-5">
+                <a class="nav-link text-capitalize" href="#">brands</a>
+              </li>
+              <li class="nav-item px-5">
+                <a class="nav-link text-capitalize" href="#">sale</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+  </header>
+  <main>
+    <!-- banner -->
+    <section>
+      <div class="container banner mb-4 ">
+        <h1 class="text-uppercase primary-title">explore the outdoors</h1>
+        <h4 class="sub-title">The best gear for fly fishing,hiking and more</h4>
+        <a href="#"><button class="btn btn-outline-light text-capitalize  primary-button rounded-0">shop
+            outdoors</button></a>
+      </div>
+    </section>
+    <!-- blog section  -->
+    <section>
+      <div class="container my-4">
+        <div class="row">
+
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-sm-3 container">
+            <div class="card text-bg-dark rounded-0">
+              <img src="./images/template images/fishing.jpeg" class="card-img rounded-0" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title text-capitalize">gear up for a perfect day</h5>
+                <p class="card-text">Shop fly fishing gear</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-sm-3 container">
+            <div class="card text-bg-dark rounded-0">
+              <img src="images/template images/floating.jpeg" class="card-img rounded-0" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title text-capitalize">Float the River</h5>
+                <p class="card-text">Creat a river adventure "</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-sm-3 container">
+            <div class="card text-bg-dark rounded-0">
+              <img src="images/template images/hiking.jpeg" class="card-img rounded-0" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title text-capitalize">Hike the Trail Less Traveled</h5>
+                <p class="card-text">Shop hiking gear</p>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+    <!-- brands section  -->
+    <section class="container">
+      <div class="container-fluid my-4">
+        <div class="row page-title">
+          <div class="col-sm-3 col-md-4 col-xxl-5 border-top border-bottom"></div>
+          <div class="col-sm-6 col-md-4 col-xxl-2">
+            <h3 class="text-capitalize text-center">Shop Popular Brands</h3>
+          </div>
+          <div class="col-sm-3 col-md-4 col-xxl-5 border-top border-bottom"></div>
+        </div>
+
+        <div class=" container-fluid">
+          <section class="splide brand-images container mb-4" aria-label="Splide Basic HTML Example">
+            <div class="splide__arrows splide__arrows--ltr">
+              <button class="splide__arrow splide__arrow--prev" type="button" aria-label="Previous slide"
+                aria-controls="splide01-track">
+                <i class="fa-solid fa-chevron-left me-5"></i>
+              </button>
+              <button class="splide__arrow splide__arrow--next" type="button" aria-label="Next slide"
+                aria-controls="splide01-track">
+                <i class="fa-solid fa-chevron-right ms-5"></i>
+              </button>
+            </div>
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide d-flex justify-content-center"><img src="./images/template images/camel.png"
+                    alt="" srcset=""></li>
+                <li class="splide__slide d-flex justify-content-center"><img src="./images/template images/keen.png"
+                    alt="" srcset=""></li>
+                <li class="splide__slide d-flex justify-content-center"><img src="./images/template images/or.png"
+                    alt="" srcset=""></li>
+                <li class="splide__slide d-flex justify-content-center"><img src="./images/template images/scarpa.png"
+                    alt="" srcset=""></li>
+                <li class="splide__slide d-flex justify-content-center"><img src="./images/template images/Smith.png"
+                    alt="" srcset=""></li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- recent blogs  -->
+    <section>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12 col-lg-6 mb-lg-0 mb-3">
+            <div class="card text-bg-dark rounded-0">
+              <img src="./images/template images/sun.jpeg" class="card-img rounded-0" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title text-capitalize">Sun Defense Essentials</h5>
+                <p class="card-text">Shop sunglasses,hats and gloves &raquo;</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 mb-lg-0 mb-3">
+            <div class="card text-bg-dark rounded-0">
+              <img src="./images/template images/flybox.jpeg" class="card-img rounded-0" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title text-capitalize">The Complete Flybox</h5>
+                <p class="card-text">Shop fly tying tools and materials &raquo;</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- cards section  -->
+    <section class="container">
+      <div class="container-fluid my-4">
+        <div class="row page-title">
+          <div class="col-3 col-lg-4 border-top border-bottom"></div>
+          <div class="col-3 col-lg-4">
+            <h3 class="text-capitalize text-center">shop customer favourites</h3>
+          </div>
+          <div class="col-3 col-lg-4 border-top border-bottom"></div>
+        </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+            <div class="card">
+              <img src="./images/template images/boat.jpeg" class="card-img-top" alt="...">
+              <div class="card-body p-0">
+                <h5 class="card-title text-uppercase mb-0">outcast</h5>
+                <p class="card-text">Fish Cat Steamer XL-IR</p>
+              </div>
+
+              <div class="card-body d-flex justify-content-between p-0 mt-1">
+                <p>$648.95</p>
+                <div class="d-flex gap-2">
+                  <i class="fa-solid fa-star mt-1"></i>
+                  <i class="fa-solid fa-star mt-1"></i>
+                  <i class="fa-solid fa-star mt-1"></i>
+                  <i class="fa-solid fa-star-half-stroke mt-1"></i>
+                  <i class="fa-regular fa-star mt-1"></i>
+                  <p>[16]</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+            <div class="card">
+              <img src="./images/template images/backpack.jpeg" class="card-img-top" alt="...">
+              <div class="card-body p-0">
+                <h5 class="card-title text-uppercase mb-0">fishpond</h5>
+                <p class="card-text">Black Canyon Backpack</p>
+              </div>
+
+              <div class="card-body d-flex justify-content-between p-0 mt-1">
+                <p>$179.95</p>
+                <div class="d-flex gap-2">
+                  <i class="fa-solid fa-star mt-1"></i>
+                  <i class="fa-solid fa-star mt-1"></i>
+                  <i class="fa-solid fa-star mt-1"></i>
+                  <i class="fa-solid fa-star-half-stroke mt-1"></i>
+                  <i class="fa-regular fa-star mt-1"></i>
+                  <p>[31]</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+            <div class="card">
+              <img src="./images/template images/hammock.jpeg" class="card-img-top" alt="...">
+              <div class="card-body p-0">
+                <h5 class="card-title text-uppercase mb-0">eno</h5>
+                <p class="card-text">Doublenest Hammock</p>
+              </div>
+
+              <div class="card-body d-flex justify-content-between p-0 mt-1">
+                <p>$69.95</p>
+                <div class="d-flex gap-2">
+                  <i class="fa-solid fa-star mt-1"></i>
+                  <i class="fa-solid fa-star mt-1"></i>
+                  <i class="fa-solid fa-star mt-1"></i>
+                  <i class="fa-solid fa-star-half-stroke mt-1"></i>
+                  <i class="fa-regular fa-star mt-1"></i>
+                  <p>[8]</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+            <div class="card">
+              <img src="./images/template images/jacket.jpeg" class="card-img-top" alt="...">
+              <div class="card-body p-0">
+                <h5 class="card-title text-uppercase mb-0">the north face</h5>
+                <p class="card-text">Women's Cesium Anorak</p>
+              </div>
+
+              <div class="card-body d-flex justify-content-between p-0 mt-1">
+                <p>$199.95</p>
+                <div class="d-flex gap-2">
+                  <i class="fa-solid fa-star mt-1"></i>
+                  <i class="fa-solid fa-star mt-1"></i>
+                  <i class="fa-solid fa-star mt-1"></i>
+                  <i class="fa-solid fa-star-half-stroke mt-1"></i>
+                  <i class="fa-regular fa-star mt-1"></i>
+                  <p>[29]</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- footer blog  -->
+    <section class="container footer-blog my-5">
+
+      <div class="row align-items-stretch">
+
+        <div class="col-12 col-lg-6 col-xl-8  mb-lg-0 mb-3">
+          <img src="./images/template images/landscape.jpeg" class="img-fluid h-100 object-fit-cover" alt="">
+        </div>
+
+        <div class="col-12 col-lg-6 col-xl-4 d-flex">
+          <div class="card text-bg-dark border-0 rounded-0">
+            <img src="./images/template images/kits.jpeg" class="card-img h-100 rounded-0" alt="...">
+            <div class=" card-img-overlay final-blog p-5 rounded-0">
+              <h5 class="primary-title text-capitalize">Crossing off The List</h5>
+              <p class="sub-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+              <a href="#"><button class="btn btn-outline-light text-capitalize  primary-button rounded-0">view
+                  shopping lists</button></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--join the club-->
+    <section class="container py-4 join-club">
+      <div class="row align-items-center mx-auto">
+        <div class="col-5 col-lg-5 col-xl-4">
+          <div class="d-flex gap-2">
+            <img src="./images/template images/money.png" alt="">
+            <h2 class="text-uppercase">MEMBER<br>Reward</h2>
+          </div>
+        </div>
+
+        <div class="col-4 col-lg-4 col-xl-4">
+          <p class="sub-title exclusive lh-base ms-3">Exclusive news,offers, and<br>more delivered to your inbox.</p>
+        </div>
+
+        <div class="col-3 col-lg-3 col-xl-4">
+          <a href="#"><button class="btn btn-outline-light text-capitalize m-3 ms-5 primary-button rounded-0">join the
+              club</button></a>
+        </div>
+
+
+
+
+      </div>
+    </section>
+
+    <!-- footer section  -->
+    <section class="container-fluid footer section my-4">
+      <div class="row p-5">
+
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-sm-2 d-flex flex-column align-items-center">
+          <h6 class="text-uppercase customer mb-2">customer service</h6>
+          <ul class="ps-0">
+            <li><a href="#" class="text-capitalize">shipping and delivery</a></li>
+            <li><a href="#" class="text-capitalize">order status</a></li>
+            <li><a href="#" class="text-capitalize">returns and exchanges</a></li>
+            <li><a href="#" class="text-capitalize">contact us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-sm-2 d-flex flex-column align-items-center">
+          <h6 class="text-uppercase customer mb-2">about our company</h6>
+          <ul class="ps-0">
+            <li><a href="#" class="text-capitalize">who are we</a></li>
+            <li><a href="#" class="text-capitalize">responsibility</a></li>
+            <li><a href="#" class="text-capitalize">news</a></li>
+            <li><a href="#" class="text-capitalize">careers</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4 ms-xl-0 ms-lg-5">
+          <div class="d-flex gap-3">
+            <img src="./images/template images/card.png" class="img-fluid" alt="">
+            <div>
+              <h4 class="text-uppercase mb-0">payment</h4>
+              <p>Accepting a variety of payment<br>methods to simplify shopping.</p>
+            </div>
+          </div>
+          <ul class="d-flex text-align-center align-items-center gap-2 ps-0 mt-2">
+            <li><a href="#"><img src="./images/template images/authorize.png" alt=""></a></li>
+            <li><a href="#"><img src="./images/template images/mastercard.png" alt=""></a></li>
+            <li><a href="#"><img src="./images/template images/visa.png" alt=""></a></li>
+            <li><a href="#"><img src="./images/template images/americanexpress.png" alt=""></a></li>
+            <li><a href="#"><img src="./images/template images/discover.png" alt=""></a></li>
+          </ul>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- copyright section  -->
+    <section class="container-fluid copyright-section mt-4 mb-0 ">
+      <div class="container">
+        <div class="row text-light">
+          <div class="col-12 col-xl-5">
+            <ul class="d-flex text-align-center align-items-center gap-3 mb-0 p-2">
+              <li class="d-flex gap-2">
+                <a href="#"><img src="./images/template images/facebook.png" alt=""></a>
+                <p>Facebook</p>
+              </li>
+              <li class="d-flex gap-2">
+                <a href="#"><img src="./images/template images/TrailandRiver-(2).png" alt=""></a>
+                <p>Twitter</p>
+              </li>
+              <li class="d-flex gap-2">
+                <a href="#"><img src="./images/template images/pinrest.png" alt=""></a>
+                <p>Pinterest</p>
+              </li>
+              <li class="d-flex gap-2">
+                <a href="#"><img src="./images/template images/instagram.png" alt=""></a>
+                <p>Instagram</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-xl-7 mt-2">
+            <span class="copy">
+              Copyright &copy; 2016 Trail and River. All right reserved.
+              <a href="#">Terms of Use.</a>
+              <a href="#">Privacy Policy.</a>
+              <a href="#">Site map</a>
+            </span>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    </section>
+  </main>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/splide.min.js"></script>
+</body>
+
+</html>

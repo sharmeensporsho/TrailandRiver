@@ -1,0 +1,249 @@
+/* default css  */
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Squada-light  {
+    font-family: "Squada One", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+.Squada-regular {
+    font-family: "Squada One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.Squada-semibold {
+    font-family: "Squada One", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+  
+.Squada-bold {
+    font-family: "Squada One", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+  
+.Squada-extrabold {
+    font-family: "Squada One", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+ 
+.primary-title{
+    font-family: "Squada One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.sub-title{
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-family: "Squada One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.primary-button{
+    font-family: "Squada One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+/* top bar  */
+.top-bar{
+    background-color: green;
+   
+}
+.top-bar a{
+   color: rgb(226, 207, 207);
+   transition: 0.3s ease-in-out;
+}
+.top-bar p{
+    color: white;
+}
+.top-bar a:hover{
+color: #fff;
+font-weight: 600;
+}
+/* top header  */
+.top-header ul li a{
+    color: grey;
+    transition: 0.3s ease-in-out;
+}
+.top-header ul li a:hover{
+    color: green;
+    font-weight: 600;
+}
+/* main nav  */
+.main-nav ul li{
+    border-right: 1px solid #dee2e6;
+}
+.main-nav ul li:last-child{
+    border-right: none;
+}
+.dropdown{
+    position: unset !important;
+}
+.dropdown-menu.show {
+    display: flex;
+    justify-content: center !important;
+    margin-bottom: 10px !important;
+}
+ .dropdown-menu{
+    border: none;
+}
+/* bannner */
+.banner{
+    background-image: url("../images/template images/Banner.jpeg");
+    padding: 80px 50px;
+    color: #fff;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+/* blog section  */
+.card-img-overlay{
+    background-color:rgba(19, 18, 18,0.5);
+    top: unset !important;
+}
+
+.card-title{
+    font-family: "Squada One", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+}
+.card-text{
+    font-family: "Squada One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+}
+.card{
+    border: none;
+}
+/* brands section  */
+.page-title h3{
+    font-size: 20px;
+    font-family: "Squada One", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: gray;
+}
+.brand-images ul li img{
+filter: grayscale(1) contrast(0.3);
+}
+
+/* cards section  */
+.card-title{
+    font-size: 22px;
+    font-family: "Squada One", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.card-text{
+    font-size: 21px;
+    font-family: "Squada One", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.card-body{
+    color: grey;
+}
+
+/* footer blog  */
+.final-blog{
+    top: 0 !important;
+}
+
+/* join the club */
+
+.join-club{
+    background-image: url('../images/template images/view.jpeg');
+    background-repeat: no-repeat;
+}
+
+.join-club h2{
+    font-family: "Squada One", sans-serif;
+    color: #fff;
+    font-size: 33px;
+}
+
+
+.member{
+    color: #fff;
+    font-family: "Squada One", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.join-club .row{
+    padding: 0 100px;
+}
+.exclusive{
+    font-size: 19px;
+    color: #fff;
+}
+/* footer section  */
+.customer{
+    font-family: "Squada One", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 19px;
+}
+.footer{
+    color: gray;
+    background-color: rgb(245, 235, 235);
+}
+.footer ul li a{
+    color: gray;
+}
+/* copyright section  */
+.copyright-section{
+    background-color: green;
+}
+.copy a{
+color: #fff;
+}
+
+
+
+
+
+
+
+@media (min-width: 768px) { 
+       .member{
+        font-size: 20px;
+}
+       .exclusive{
+        font-size: 14px;
+        
+}
+    
+} 
+@media (min-width: 576px) { 
+       .member{
+        font-size: 20px;
+}
+       .exclusive{
+        font-size: 14px;
+        
+}
+    
+} 
